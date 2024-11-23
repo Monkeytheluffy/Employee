@@ -1,0 +1,10 @@
+{% load static %}
+<div class="container mt-5">
+    <h2>Add New Employee</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}  
+        <button type="submit" class="btn btn-primary">Add Employee</button>
+    </form>
+</div>
+
